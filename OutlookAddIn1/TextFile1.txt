@@ -1,0 +1,22 @@
+﻿ do
+            {
+                
+
+                var CardList = TList.Cards.ToList();
+
+
+                    foreach (var card in CardList)
+                {
+                    string tName = card.Name.Substring(0, 6);
+
+                    if (tName == jnum.Trim())
+                    {
+                        cardid = card.Id;
+                        test = true;
+                    }
+                }
+
+                
+                i++;
+
+            } while (test == false);
